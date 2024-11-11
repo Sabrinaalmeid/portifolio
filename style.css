@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor-principal: #ffffff; /*  */
+    --cor-secundaria: #d454ae; /* Cor do título (meus projetos, eu estudo programação) */
+    --cor-destaque: #6b1652; /* Fica ao passar o mouse no link do github na área Entre em contato */
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+footer a {
+    color: var(--cor-principal)
+}
+
+footer a:hover {
+    color: var(--cor-destaque);
+}
+ 
+/* Estilo para o botão */
+.botao {
+    background-color: #d650c4; /* Cor do fundo do botão */
+    color: azure; /* Cor do texto do botão */ 
+    border: none; /* Remove a borda padrão, caso queira borda, tire o none e adicione uma cor */
+    padding: 10px 20px; /* Define o tamanho do botão */
+    font-size: 12px; /* Tamanho da fonte da letra dentro do botão */
+    font-weight: bold; /* Texto em negrito, caso queira outro é só mudar a parte do bold */
+    cursor: pointer; /* Cursor do botão */
+    border-radius: 8px; /* Bordas arredondadas, caso não queira, apenas apague essa parte */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.botao:hover {
+    background-color: #2c3e50; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente */
+}
+
+/* Efeito ao clicar no botão */
+.botao:active {
+    background-color: #ffffff; /* Cor ao pressionar, clicar no botão  */
+    transform: scale(0.98); /* Diminiu ligeiramente */
+}
